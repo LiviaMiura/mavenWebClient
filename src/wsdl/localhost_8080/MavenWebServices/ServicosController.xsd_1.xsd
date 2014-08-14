@@ -17,6 +17,7 @@
 <xs:complexType name="servico">
 <xs:sequence>
 <xs:element name="nome" type="xs:string" minOccurs="0"/>
+<xs:element name="porta" type="xs:string" minOccurs="0"/>
 <xs:element name="status" type="xs:string" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>

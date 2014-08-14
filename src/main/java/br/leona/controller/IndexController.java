@@ -24,15 +24,18 @@ public class IndexController {
     @Path("/")
     @SuppressWarnings("empty-statement")
     public void index(){   
-       java.util.List<br.leona.station.controller.Servico> servicos = GetListService();
+       java.util.List<br.leona.controller.Servico> servicos = GetListService();
         result                 
                 .include("listService", GetListService())
                 .forwardTo("index.jsp");
     }    
     
-    private static java.util.List<br.leona.station.controller.Servico> GetListService() {
-        br.leona.station.controller.ServicosController_Service service = new br.leona.station.controller.ServicosController_Service();
-        br.leona.station.controller.ServicosController port = service.getServicosControllerPort();
+
+    
+    
+    private static java.util.List<br.leona.controller.Servico> GetListService() {
+        br.leona.controller.ServicosController_Service service = new br.leona.controller.ServicosController_Service();
+        br.leona.controller.ServicosController port = service.getServicosControllerPort();
         return port.getListService();
     }
 

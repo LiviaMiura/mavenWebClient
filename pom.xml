@@ -22,6 +22,18 @@
             <type>jar</type>
         </dependency>
         <dependency>
+            <groupId>br.leona</groupId>
+            <artifactId>Leona_Station</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>br.leona</groupId>
+            <artifactId>mavenWebClient</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>6.0</version>
@@ -99,7 +111,7 @@
                             <wsdlFiles>
                                 <wsdlFile>localhost_8080/MavenWebServices/ServicosController.wsdl</wsdlFile>
                             </wsdlFiles>
-                            <packageName></packageName>
+                            <packageName>br.leona.controller</packageName>
                             <wsdlLocation>http://localhost:8080/MavenWebServices/ServicosController?wsdl</wsdlLocation>
                             <staleFile>${project.build.directory}/jaxws/stale/ServicosController.stale</staleFile>
                         </configuration>
